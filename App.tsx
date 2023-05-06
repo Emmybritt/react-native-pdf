@@ -6,10 +6,28 @@
  */
 
 import React from 'react';
-import PdfComponent from './src/PdfComponent';
+import Generate from './src/Generate';
+// import GeneratePdf from './src/GeneratePdf';
+// import PdfComponent from './src/PdfComponent';
 
 function App() {
-  return <PdfComponent />;
+  return (
+    // <GeneratePdf
+    //   baseJobPrice={40}
+    //   formattedCost={50}
+    //   formattedTotalCost={100}
+    //   name="Ogwu Emmanuel Berit"
+    //   jobCreatorUser={{
+    //     phone: '+2347016588973',
+    //     state: 'Lagos State',
+    //     street: '51 afolabi brown akoka',
+    //     zipCode: '10001',
+    //   }}
+    //   proposalName="Tola and co proposal"
+    // />
+    <Generate />
+    // <DummyPdfApp />
+  );
 }
 
 export default App;

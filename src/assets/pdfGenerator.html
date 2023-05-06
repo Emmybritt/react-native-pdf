@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>PDF Generator</title>
+    <script src="./pdfkit.min.js"></script>
+  </head>
+  <body>
+    <script>
+      var doc = new PDFDocument();
+      doc.pipe(window.output);
+
+      doc.font('Helvetica').fontSize(25).text('Hello, World!');
+
+      doc.end();
+    </script>
+    <div class="px-10" style="height: 5%; margin-top: 4px">
+      <div class="flex items-center justify-between">
+        <div>
+          <span style="font-size: 15px"><b>Total Price: $0 </b></span>
+          <div class="mt-5">
+            <h3 style="font-size: 17px">
+              <b style="border-bottom: 1px solid black">Approval by Client: </b>
+            </h3>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex flex-row items-center">
+            <div
+              style="font-size: 15px"
+              class="flex flex-row; position: relative">
+              <span
+                >Accept:
+                <span style="visibility: hidden; border: 1px solid red"
+                  >_________________</span
+                ></span
+              >
+            </div>
+          </div>
+          <div class="mt-5">
+            <h3 style="font-size: 17px">
+              <b style="border-bottom: 1px solid black">Approval by Client: </b>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
