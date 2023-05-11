@@ -7,7 +7,8 @@
 
 import React from 'react';
 // import Generate from './src/Generate';
-import JspdfDemo from './src/JspdfDemo';
+// import JspdfDemo from './src/JspdfDemo';
+import NewPdfemplate from './src/NewPdfTmplate';
 // import GeneratePdf from './src/GeneratePdf';
 // import PdfComponent from './src/PdfComponent';
 
@@ -27,8 +28,9 @@ function App() {
     //   proposalName="Tola and co proposal"
     // />
     // <Generate />
-    <JspdfDemo />
+    // <JspdfDemo />
     // <DummyPdfApp />
+    <NewPdfemplate />
   );
 }
 
