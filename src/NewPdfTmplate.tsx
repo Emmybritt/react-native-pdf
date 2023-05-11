@@ -695,12 +695,35 @@ const NewPdfemplate = () => {
       font: font,
       color: footerColor,
     });
+
     page.drawLine({
       start: {x: 20, y: height - 730},
       end: {x: width - 15, y: height - 730},
       thickness: 0.3,
       color: rgb(0, 0, 0),
       opacity: 0.75,
+    });
+
+    page.drawText('Frist text only group', {
+      x: 30,
+      y: height - 750,
+      size: 13,
+      font: font,
+      color: footerColor,
+    });
+    page.drawText('.', {
+      x: 50,
+      y: height - 770,
+      size: 26,
+      font: font,
+      color: footerColor,
+    });
+    page.drawText('JESESE kekeke', {
+      x: 65,
+      y: height - 770,
+      size: 13,
+      font: font,
+      color: footerColor,
     });
 
     // Save the PDF to a file or convert it to bytes
